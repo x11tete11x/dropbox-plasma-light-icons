@@ -1,4 +1,5 @@
 pkgname=dropbox-plasma-light-icons-git
+_pkgname=dropbox-plasma-light-icons
 pkgver=1
 pkgrel=1
 pkgdesc="Dropbox icons for Plasma 5 Light Panels"
@@ -14,5 +15,5 @@ install="dropbox-plasma-light-icons.install"
 
 package(){
   install -d "${pkgdir}/usr/share/icons/hicolor/"
-  cp -r ${srcdir}/icons/* "${pkgdir}/usr/share/icons/hicolor/"
+  cp -r ${srcdir}/${_pkgname}/icons/* "${pkgdir}/usr/share/icons/hicolor/"
 }
